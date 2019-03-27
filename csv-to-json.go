@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"encoding/csv"
 	"encoding/json"
-	"fmt"
 	"io"
 	"log"
 	"os"
@@ -55,5 +54,5 @@ func main() {
 		out.Write(jsonStr)
 
 	}
-	fmt.Print("]")
+	out.WriteString("]")
 }
